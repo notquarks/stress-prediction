@@ -9,7 +9,7 @@ export default defineConfig({
     port:4000,
     proxy:{
       '/api/v1/predict':{
-        target:'https://sleep-flask-test.herokuapp.com/api/v1/predict',
+        target:'https://predict-sleep.fly.dev/api/v1/predict',
         changeOrigin: true,
         secure: false
       }

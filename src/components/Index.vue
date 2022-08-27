@@ -103,7 +103,7 @@ export default {
             e.preventDefault();
             // console.warn(this.formData);
             // fetch("http://127.0.0.1:5000/api/v1/predict", this.formData, requestOptions)
-            axios.post('https://sleep-flask-test.herokuapp.com/api/v1/predict', this.formData, requestOptions)
+            axios.post('https://predict-sleep.fly.dev/api/v1/predict', this.formData, requestOptions)
                 .then((res) => {
                     console.warn(res);
                     this.output = res.data.prediction
